@@ -78,7 +78,7 @@ find package/luci-theme-*/* -type f -name '*luci-theme-*' -print -exec sed -i '/
 # 调整 openvpn 到 VPN 菜单
 
 sed -i 's/services/vpn/g' feeds/luci/applications/luci-app-openvpn/luasrc/controller/*.lua
-sed -i 's/services/vpn/g' feeds/luci/applications/luci-app-openvpn/luasrc/model/cbi/openvpn/*.lua
+sed -i 's/services/vpn/g' feeds/luci/applications/luci-app-openvpn/luasrc/model/cbi/*.lua
 sed -i 's/services/vpn/g' feeds/luci/applications/luci-app-openvpn/luasrc/view/openvpn/*.htm
 
 ./scripts/feeds update -a
